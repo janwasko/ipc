@@ -6,6 +6,9 @@ then
 fi
 
 word=$(./receiver)
+
+echo "Odebrano: $word"
+
 result=$(echo $word | aspell list)
 if [ "$result" != "" ]
 then
